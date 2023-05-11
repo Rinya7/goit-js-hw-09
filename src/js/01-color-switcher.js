@@ -10,6 +10,7 @@ const refs = {
   btnStop: document.querySelector('button[data-stop]'),
   bodyColor: document.querySelector('body'),
 };
+console.log(refs.btnStart);
 
 refs.btnStart.addEventListener('click', callbackStart);
 refs.btnStop.addEventListener('click', callbackStop);
