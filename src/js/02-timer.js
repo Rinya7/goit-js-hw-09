@@ -50,6 +50,7 @@ function callbackStartTimer(evt) {
 
 function setDataToStart(evt) {
   const key = Object.values(evt);
+  console.log(key);
   for (let i = 0; i < key.length; i++) {
     refs.days[i].textContent = addLeadingZero(key[i]);
   }
