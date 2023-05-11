@@ -19,22 +19,4 @@ img {
 
 span {
   font-weight: 900;
-  /*font-family: Monospace;*/
-  /*font: bold;*/
-}
-
-.value {
-  display: block;
-  text-align: center;
-}
-.timer {
-  margin-top: 20px;
-  display: flex;
-}
-
-.field {
-  margin-right: 20px;
-  padding: 5px;
-  /*border: #212121;*/
-  outline: auto;
 }
