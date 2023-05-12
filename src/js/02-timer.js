@@ -10,9 +10,6 @@ const refs = {
   fieldSection: document.querySelectorAll('.field'),
 };
 
-const flatpickr = require('flatpickr');
-flatpickr('#datetime-picker', options);
-
 refs.btnStart.addEventListener('click', callbackStartTimer);
 refs.btnStart.setAttribute('disabled', 'disabled');
 const DELAY = 1000;
@@ -41,6 +38,9 @@ const options = {
     setDataToStart(dataInput);
   },
 };
+
+const flatpickr = require('flatpickr');
+flatpickr('#datetime-picker', options);
 
 function callbackStartTimer(evt) {
   const idTimer = setInterval(() => {
