@@ -40,7 +40,7 @@ const options = {
 };
 
 const flatpickr = require('flatpickr');
-flatpickr('#datetime-picker', options);
+flatpickr(refs.input, options);
 
 function callbackStartTimer(evt) {
   const idTimer = setInterval(() => {
