@@ -39,7 +39,7 @@ const options = {
   },
 };
 
-const flatpickr = require('flatpickr');
+//const flatpickr = require('flatpickr');
 flatpickr(refs.input, options);
 
 function callbackStartTimer(evt) {
