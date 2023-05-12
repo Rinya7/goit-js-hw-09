@@ -10,6 +10,9 @@ const refs = {
   fieldSection: document.querySelectorAll('.field'),
 };
 
+const flatpickr = require('flatpickr');
+flatpickr('#datetime-picker', options);
+
 refs.btnStart.addEventListener('click', callbackStartTimer);
 refs.btnStart.setAttribute('disabled', 'disabled');
 const DELAY = 1000;
@@ -64,9 +67,6 @@ function addLeadingZero(value) {
   return value.toString().padStart(2, '0');
 }
 
-const flatpickr = require('flatpickr');
-flatpickr('#datetime-picker', options);
-
 function convertMs(ms) {
   // Number of milliseconds per unit of time
   const second = 1000;
@@ -97,7 +97,7 @@ function cssTimer() {
   refs.timerCss.style.marginTop = '20px';
 
   const keys = Object.values(refs.fieldSection);
-  console.log(keys);
+  //  console.log(keys);
   for (let i = 0; i < keys.length; i++) {
     refs.fieldSection[i].style.marginRight = '20px';
     refs.fieldSection[i].style.padding = '5px';
